@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #root {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .App {
+    width: 800px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .task {
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+  
+    .done {
+      text-decoration: line-through;
+    }
+  }
+  
+  .task-enter {
+    transform: translateX(-350px);
+  }
+  
+  .task-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+  
+  }
+  
+  .task-exit {
+    opacity: 1;
+  }
+  
+  .task-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+  
+  }
+  
+  
+  
