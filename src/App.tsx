@@ -61,7 +61,8 @@ const App = () => {
     <TaskProvider>
     <div className={styles.App}>
       <Header/> {/*} taskCount={tasks.length} />*/}
-      <Input addTask={createTask} clearAll={clearAll} />
+      <Input addTask={createTask} clearAll={clearAll}
+       />
      <List
         items={tasks}
         renderItem={(task: ITask) => <TaskItem task={task} key={task.id} completeTask={completeTask} removeTask={removeTask}/>}
